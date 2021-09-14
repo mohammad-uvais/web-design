@@ -1,0 +1,302 @@
+/* Google Homepage Stylesheet */
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    float: right;
+    box-sizing: border-box;
+    padding-right: 4px;
+    justify-content: space-evenly;
+    font: 13/27px 'Roboto', arial, sans-serif;
+    color: black;
+}
+.simple-link-cont {
+    display: flex;
+    padding-right: 15px;
+    align-items: center;
+}
+.simple-link {
+    padding-left: 15px;
+}
+#gmail, #images {
+    line-height: 24px;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
+#gmail:hover, #images:hover {
+    text-decoration: underline;
+}
+.fancy-link-cont {
+    display: flex;
+    color: black;
+    align-items: center;
+}
+.google-apps-cont {
+    position: relative;
+    white-space: nowrap;
+}
+#google-apps {
+    display: inline-block;
+    color: black;
+    padding: 8px;
+    border-radius: 2px;
+}
+#google-apps svg {
+    width: 24px;
+    height: 24px;
+    color: #5f6368;
+    fill: currentColor;
+    overflow: hidden;
+}
+#google-apps:hover {
+    background-color: rgba(60,64,67,0.08);
+    border-radius: 50%;
+}
+#sign-in {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: #1a73e8;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+    margin: 8px 8px;
+    padding: 9px 23px;
+    border: 1px solid transparent;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+#sign-in:hover {
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+.google-img-cont {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    min-height: 92px;
+    height: calc(100% - 560px);
+    
+}
+.google-img-block {
+    position: relative;
+    max-height: 92px;
+    margin-top: auto;
+}
+#google-img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+}
+.search-cont {
+    padding: 20px;
+    max-height: 160px;
+    box-sizing: border-box;
+    max-width: 584px;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+.search-bar-cont {
+    display: flex;
+    width: 534px;
+    height: 40px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: auto;
+    z-index: 3;
+    padding: 5px 8px 0 14px;
+}
+.search-bar-cont:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+.search-icon {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+#search-icon {
+    display: flex;
+    display: inline-block;
+    line-height: 24px;
+    position: relative;
+    margin: auto;
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+    color: #9aa0a6;
+}
+#search-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.search-bar {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 34px;
+}
+#search-bar {
+    display: flex;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    height: 34px;
+    width: 447px;
+    color: rgba(0,0,0,.87);
+    font-size: 16px;
+    cursor: text;
+    border: none;
+    outline: none;
+}
+.audio-search {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0px;
+    outline: none;
+    padding: 0px 8px;
+    margin-top: -5px ;
+    width: 24px;
+    line-height: 44px;
+}
+.audio-search svg {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.search-buttons-cont {
+    text-align: center;
+    width: 584px;
+    height: 70px;
+    padding-top: 18px;
+    top: 53px;
+    margin: auto;
+    align-items: center;
+}
+.search-button {
+    text-align: center;
+}
+#search-button, #feeling-lucky {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+#search-button:hover  {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+#feeling-lucky:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.lang-cont {
+    font-size: small;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.g-offered {
+    color: #3c4043;
+    display: inline-block;
+    line-height: 28px;
+    font-size: small;
+}
+.g-offered a {
+    padding: 0 3px;
+    color: #1a0dab;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background: #f2f2f2;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+.footer-links {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.lf-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#lf-link {
+    color: #70757a;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.rf-links {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#rf-link {
+    display: block;
+    color: #70757a;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.settings {
+    position: relative;
+}
+#settings {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    color: #70757a; 
+    border: none;
+    background: none;
+}
+#settings:hover {
+    text-decoration: underline;
+}
+#lf-link:hover, #rf-link:hover{
+    text-decoration: underline;
+}

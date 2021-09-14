@@ -1,0 +1,18 @@
+body {
+    background-color: mistyrose;
+}
+
+h1,
+p {
+    color: maroon;
+    text-align: center;
+}
+main {
+    position: absolute;
+    top: 25%;
+    right: 37%;
+    border-radius: 20px;
+    background-color: mintcream;
+    padding: 20px;
+    line-height: 2;
+  }
