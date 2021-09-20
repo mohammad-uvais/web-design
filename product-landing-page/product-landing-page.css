@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 body {
-    background-color: yellowgreen;
+    background-color: maroon;
     font-family: 'Poppins', sans-serif;
 }
 #page-wrapper {
@@ -15,22 +16,22 @@ li {
     list-style: none;
 }
 a {
-    color: #000;
+    color: black;
     text-decoration: none;
 }
 .container {
-    max-width: 1000px;
+    max-width: 1080px;
     width: 100%;
     margin: 0 auto;
+    color: #fff;
 }
 .button {
     padding: 0 20px;
     height: 40px;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: 1rem;
     border: 3px black solid;
-    border-radius: 2px;
-    background: yellow;
+    border-radius: 3px;
+    background: black;
     cursor: pointer;
 }
 .grid {
@@ -44,7 +45,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #eee;
+    background-color: #fff;
 }
 @media (max-width: 640px) {
     header {
@@ -64,13 +65,13 @@ header {
 }
 #logo > img {
     width: 100%;
-    height: 100%;
+    height: auto;
     max-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 0px;
+    margin-left: 20px;
 }
 @media (max-width: 640px) {
     #logo > img {
@@ -94,8 +95,7 @@ header {
 }
 nav > ul {
     width: 35vw;
-    display: flex;
-    flex-direction: row;               
+    display: flex;              
     justify-content: space-around;
 }
 @media (max-width: 650px) {
@@ -113,12 +113,15 @@ nav > ul {
     margin-top: 50px;
 }
 #hero > h2 {
+    margin-top: 50px;
     margin-bottom: 20px;
+    word-wrap: break-word;
 }
 #hero input[type='email'] {
     max-width: 275px;
     width: 100%;
     padding: 5px;
+    border-radius: 3px;
 }
 #hero input[type='submit'] {
     max-width: 150px;
@@ -126,11 +129,13 @@ nav > ul {
     height: 30px;
     margin: 15px 0;
     border: 0;
-    background-color: #f1c40f;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px black;
 }
 #hero input[type='submit']:hover {
-    background-color: orange;
-    transition: background-color 1s;
+    background-color: black;
+    color: #fff;
+    transition: background-color 0.5s;
 }
 @media (max-width: 640px) {
     #hero {
@@ -143,7 +148,7 @@ nav > ul {
     justify-content: center;
     height: 125px;
     width: 20vw;
-    color: darkorange;
+    color: #fff;
 }
 @media (max-width: 640px) {
     #features .icon {
@@ -187,11 +192,11 @@ iframe {
     text-align: center;
     width: calc(100% / 3);
     margin: 10px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 5px;
 }
 .product > .level {
-    background-color: #ddd;
+    background-color: #fff;
     color: black;
     padding: 15px 0;
     width: 100%;
@@ -210,12 +215,14 @@ iframe {
 .product > button {
     border: 0;
     margin: 15px 0;
-    background-color: #f1c40f;
+    background-color: #fff;
     font-weight: 400;
+    box-shadow: 1px 2px 3px black;
 }
 .product > button:hover {
-    background-color: orange;
-    transition: background-color 1s;
+    background-color: black;
+    transition: background-color 0.5s;
+    color: #fff;
 }
 @media (max-width: 800px) {
     #pricing {
@@ -230,7 +237,7 @@ iframe {
 }
 footer {
     margin-top: 30px;
-    background-color: #ddd;
+    background-color: maroon;
     padding: 20px;
 }
 footer > ul {
@@ -245,5 +252,5 @@ footer > span {
     display: flex;
     justify-content: center;
     font-size: 1em;
-    color: #444;
+    color: #222;
 }
