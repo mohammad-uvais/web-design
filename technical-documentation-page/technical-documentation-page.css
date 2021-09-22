@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
+    min-width: 290px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: mistyrose;
-    margin: 0px;
     color: maroon;
     line-height: 1.5;
 }
@@ -9,7 +10,7 @@ html, body {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 25%;
+    min-width: 25%;
     height: 100%;
     border-right: solid;
     border-color: maroon;
@@ -17,13 +18,11 @@ html, body {
 #navbar ul {
     height: 80%;
     list-style: none;
-    margin: 0px;
     padding: 10px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 #navbar li {
-    border-top: 1px solid;
     list-style: none;
     position: relative;
     width: 100%;
@@ -38,17 +37,17 @@ header {
     color: maroon;
     margin: 10px;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 #main-doc {
-    max-width: 75%;
+    padding: 20px;
     position: absolute;
-    margin-left: 350px;
+    margin-left: 320px;
     margin-bottom: 110px;
 }
 #main-doc header {
-    text-align: left;
-    margin: 0px;
+    text-align: justify;
+    margin: 10px;
 }
 
 section article {
@@ -72,17 +71,13 @@ code {
     padding: 10px 0px 10px 20px;
     text-decoration: none;
     color: maroon;
-    border: 1px solid black;
-    background-color: blanchedalmond;
-}
-#main-doc {
-    float: right;
-    width: 75%;
+    border: 1px solid maroon;
+    background-color: mistyrose;
 }
 .main-section {
     padding: 0px 20px 0px 20px;
-    line-height: 150%;
-}   
+}
+
 @media only screen and (max-width: 815px) {
     /* For mobile phones: */
         #navbar ul {
@@ -91,7 +86,7 @@ code {
         }
 
         #navbar {
-            background-color: white;
+            background-color: mistyrose;
             position: absolute;
             top: 0;
             padding: 0;
@@ -100,7 +95,6 @@ code {
             max-height: 275px;
             border: none;
             z-index: 1;
-            border-bottom: 2px solid;
         }
 
         #main-doc {
