@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>freeCodeCamp Survey Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>freeCodeCamp Survey Form</h1>
-        <p>Thank you for taking the time to help us improve the platform</p>
+      <h1>freeCodeCamp Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform</p>
     </header>
+
     <main>
-        <form method="post">
-            <label for="name">Name</label>
-            <input type="text"  name="name" id="name" placeholder="Enter your name">
+      <form method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" />
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" />
 
-            <label for="age">Age (optional)</label>
-            <input type="number" name="age" id="age" placeholder="Age">
+        <label for="age">Age (optional)</label>
+        <input type="number" name="age" id="age" placeholder="Age" />
 
-            <p>Which option best describes your current role?</p>
-        </form>
+        <p>Which option best describes your current role?</p>
+        <select name="role" id="role">
+          <option value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label for="definitely">
+          <input type="radio" name="recommend" id="definitely" value="definitely" />
+          Definitely
+        </label>
+        <label for="maybe">
+          <input type="radio" name="recommend" id="maybe" value="maybe" />
+          Maybe
+        </label>
+        <label for="not-sure">
+          <input type="radio" name="recommend" id="not-sure" value="not-sure" />
+          Not sure
+        </label>
+
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select name="feature" id="feature">
+          <option value="">Select an option</option>
+          <option value="challanges">Challanges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open Source</option>
+        </select>
+      </form>
     </main>
-</body>
+  </body>
 </html>
