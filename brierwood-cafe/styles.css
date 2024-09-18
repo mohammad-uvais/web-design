@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 1.25rem;
   background-color: var(--color-coffee-light);
-  background-image: url("coffee-beans-bg-1280.jpg");
+  background-image: url("assets/coffee-beans-bg-1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
