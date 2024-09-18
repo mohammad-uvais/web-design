@@ -19,47 +19,53 @@
       <form method="post">
         <fieldset name="Personal Info">
           <div class="form-control">
-            <label for="first_name">Enter your first name :</label>
+            <label for="first_name">Enter your first name</label>
             <input type="text" id="first_name" name="first_name" required />
           </div>
           <div class="form-control">
-            <label for="last_name">Enter your last name :</label>
+            <label for="last_name">Enter your last name</label>
             <input type="text" id="last_name" name="last_name" required />
           </div>
           <div class="form-control">
-            <label for="mobile">Enter your Mobile Number :</label>
+            <label for="mobile">Enter your Mobile Number</label>
             <input type="tel" name="mobile" id="mobile" required />
           </div>
           <div class="form-control">
-            <label for="email">Enter your Email :</label>
+            <label for="email">Enter your Email</label>
             <input type="email" name="email" id="email" required />
           </div>
           <div class="form-control">
-            <label for="password">Create a new password :</label>
+            <label for="password">Create a new password</label>
             <input type="password" name="password" id="password" pattern="[a-z0-9]{8,}" required />
           </div>
         </fieldset>
         <fieldset name="Additional Info">
           <div class="form-control">
-            <label for="age">Enter your age (years):</label>
+            <label for="age">Enter your age (years)</label>
             <input type="number" name="age" id="age" />
           </div>
           <div class="form-control">
-            <label for="profile_picture">Upload a profile picture:</label>
+            <label for="profile_picture">Upload a profile picture</label>
             <input type="file" name="profile_picture" id="profile_picture" />
           </div>
           <div class="form-control">
-            <label for="bio">Provide a bio:</label>
+            <label for="bio">Provide a bio</label>
             <textarea name="bio" id="bio" cols="30" rows="5" placeholder="I like coding on the beach..."></textarea>
           </div>
         </fieldset>
         <fieldset name="Account Info">
           <legend>Account type (required)</legend>
           <label for="personal"
-            ><input type="radio" name="account_type" id="personal" value="personal" class="inline" />Personal</label
+            ><input
+              type="radio"
+              name="account_type"
+              id="personal"
+              value="personal"
+              class="inline"
+              checked />Personal</label
           >
           <label for="business"
-            ><input type="radio" name="account_type" id="business" value="business" class="inline" /> Business</label
+            ><input type="radio" name="account_type" id="business" value="business" class="inline" />Business</label
           >
           <div class="form-control">
             <label for="referrer">How did you hear about us?</label>
