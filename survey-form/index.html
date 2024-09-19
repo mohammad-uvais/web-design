@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>freeCodeCamp Survey Form</title>
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>freeCodeCamp Survey Form</h1>
-      <p>Thank you for taking the time to help us improve the platform</p>
+      <h1 class="text-center">freeCodeCamp Survey Form</h1>
+      <p class="text-center">Thank you for taking the time to help us improve the platform</p>
     </header>
 
-    <main>
+    <main class="form-container">
       <form method="post">
         <article>
           <label for="name">Name</label>
@@ -50,7 +52,6 @@
             Maybe
           </label>
         </article>
-
         <article>
           <label for="not-sure">
             <input type="radio" name="recommend" id="not-sure" value="not-sure" />
@@ -138,7 +139,7 @@
         <article>
           <p>Any comments or suggestions?</p>
           <textarea name="suggestions" id="suggestions" placeholder="Enter your comment here"></textarea>
-        </section>
+        </article>
 
         <article>
           <button type="submit">Submit</button>
