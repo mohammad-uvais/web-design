@@ -77,6 +77,7 @@ button {
   background-color: var(--color-blue-bg-button);
   border-color: white;
   min-width: 300px;
+  cursor: pointer;
 }
 
 input[type="file"] {
